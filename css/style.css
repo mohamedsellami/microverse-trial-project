@@ -14,6 +14,7 @@ body{
     width: 100%;
     height: 100%;
     background-color: #57579288;
+    overflow: scroll;
 }
 
 #container #title{
@@ -49,7 +50,7 @@ body{
     margin-bottom: 0.5em;
 }
 
-#container #survey-form #email, #container #survey-form #name, #container #survey-form #age, #container #survey-form #dropdown{
+#container #survey-form #email, #container #survey-form #name, #container #survey-form #number, #container #survey-form #dropdown{
     width: 90%;
     height: 2.5em;
     border-radius: 0.2em;
@@ -62,4 +63,38 @@ body{
 
 #container #survey-form #dropdown{
     width: 94%;
+}
+
+#form-group{
+    display:flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+    
+}
+#container #form-group label{
+    margin: 0;
+}
+#recommendation{
+    margin-top: 1em;
+}
+#comments{
+    margin-top: 1em;
+}
+textarea{
+    width: 94%;
+    border: none;
+    padding: 1em 0.5em;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    resize: none;
+}
+#submit{
+    width:97%;
+    background: #37af65;
+    color:white;
+    padding:1em;
+    border-radius: 0.5em;
+    border:none;
+    font-size: large;
+    margin-bottom: 2em;
 }

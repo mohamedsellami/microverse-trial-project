@@ -20,7 +20,7 @@
         <input type="email" name="email" id="email" placeholder="Enter your Email" required>
         <br/>
         <label for="number" id="number-label">Age(optional)</label>
-        <input type="number" name="age" id="age" placeholder="Age">
+        <input type="number" name="age" id="number" min="18" max="35" placeholder="Age">
         <br/>
         <label for="recomandation">Which option best describes your current role?</label>
         <select name="dropdown" id="dropdown">
@@ -31,6 +31,92 @@
           <option value="prefer-not-to-say">prefer not to say</option>
           <option value="other">other</option>
         </select>
+
+        <label for="">Would you recommend freeCodeCamp to a friend?</label>
+        <div id="form-group">
+          <input type="radio" name="choice" id="definitely" value="definitely">
+          <label for="definitely">Definitely</label>
+        </div>
+       <div id="form-group">
+        <input type="radio" name="choice" id="maybe" value="maybe">
+        <label for="maybe">Maybe</label>
+       </div>
+         <div id="form-group">
+          <input type="radio" name="choice" id="not-sure" value="not-sure">
+          <label for="not-sure">Not Sure</label>
+         </div>
+        
+         <label for="recomandation" id="recommendation">What is your favorite feature of freeCodeCamp?</label>
+        <select name="dropdown" id="dropdown">
+          <option value="none" selected disabled>select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="open-source">Open Source</option>
+          
+        </select>
+
+        <label for="recommendation">What would you like to see improved? (Check all that apply)</label>
+        
+        <div id="form-group">
+          <input type="checkbox"  id="front-end-projects" value="front-end-projects">
+          <label for="front-end-projects">Front End Projects</label>
+        </div>
+
+        <div id="form-group">
+          <input type="checkbox"  id="back-end-projects" value="back-end-projects">
+          <label for="back-end-projects">Back End Projects</label>
+        </div>
+
+        <div id="form-group">
+          <input type="checkbox"  id="data-visualization" value="data-visualization">
+          <label for="data-visualization">Data Visualization</label>
+        </div>
+
+        <div id="form-group">
+          <input type="checkbox"  id="challenges" value="challenges">
+          <label for="challenges">Challenges</label>
+        </div>
+
+        <div id="form-group">
+          <input type="checkbox"  id="open-source-community" value="open-source-community">
+          <label for="open-source-community">Open Source Community</label>
+        </div>
+
+        <div id="form-group">
+          <input type="checkbox"  id="gitter-help-group" value="gitter-help-group">
+          <label for="gitter-help-group">gitter Help Group</label>
+        </div>
+
+        <div id="form-group">
+          <input type="checkbox"  id="videos" value="videos">
+          <label for="videos">Videos</label>
+        </div>
+
+        <div id="form-group">
+          <input type="checkbox"  id="city-meetups" value="meetups">
+          <label for="city-meetups">City Meetups</label>
+        </div>
+
+        <div id="form-group">
+          <input type="checkbox"  id="wiki" value="wiki">
+          <label for="wiki">Wiki</label>
+        </div>
+
+        <div id="form-group">
+          <input type="checkbox"  id="forum" value="forum">
+          <label for="forum">Forum</label>
+        </div>
+
+        <div id="form-group">
+          <input type="checkbox"  id="additional-courses" value="additional-courses">
+          <label for="additional-courses">Additional Courses</label>
+        </div>
+        <label for="comments" id="comments">Any comments or suggestions?</label>
+        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comment here ..."></textarea>
+
+        <input type="submit" value="Submit" id="submit">
+
       </form>
     </div>
     <script  src="js/index.js"></script>
