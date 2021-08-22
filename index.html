@@ -9,18 +9,30 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
+    <div id="container">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+      <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        <br/>
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+        <br/>
+        <label for="number" id="number-label">Age(optional)</label>
+        <input type="number" name="age" id="age" placeholder="Age">
+        <br/>
+        <label for="recomandation">Which option best describes your current role?</label>
+        <select name="dropdown" id="dropdown">
+          <option value="none" selected disabled>select current role</option>
+          <option value="student">student</option>
+          <option value="full-time">full-time job</option>
+          <option value="full-time learner">full-time learner</option>
+          <option value="prefer-not-to-say">prefer not to say</option>
+          <option value="other">other</option>
+        </select>
+      </form>
+    </div>
     <script  src="js/index.js"></script>
   </body>
 </html>
